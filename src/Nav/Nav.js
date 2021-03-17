@@ -33,8 +33,8 @@ const Nav = ({ auth: { isAuthenticated, loading }, logout }) => {
             padding: '0px',
             textDecoration: 'none',
           }}
-          to='/songs/genre1'>
-          <div className={'polarJam'}>PolarJam</div>
+          to='/'>
+          <div className={'polarJam'}>SongColor</div>
         </Link>
       </div>
       <div className={'back'}>
@@ -43,7 +43,9 @@ const Nav = ({ auth: { isAuthenticated, loading }, logout }) => {
         </div>
         <ul className={'dropdown'}>
           <li>
-            <Link style={{ margin: '0px', padding: '0px', textDecoration: 'none' }} to='/beats'>
+            <Link
+              style={{ margin: '0px', padding: '0px', textDecoration: 'none' }}
+              to='/songs/genre1'>
               <span className={'name'}>Studio</span>
             </Link>
             <ul>

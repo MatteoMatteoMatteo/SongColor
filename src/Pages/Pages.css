@@ -1,0 +1,43 @@
+.homeDiv {
+  max-width: 500px;
+  width: 100%;
+  padding: 50px;
+  background-color: var(--lightBlack);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.divider {
+  margin: auto;
+  width: 80%;
+  height: 4px;
+  background-color: white;
+}
+
+.letsGoText {
+  font-size: 1.3rem;
+}
+
+.letsGoButton {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  background-color: white;
+  padding: 15px;
+  color: var(--bg);
+  border: solid 5px var(--bg);
+  font-family: 'Lobster', sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  border-radius: 100px;
+  transition: 300ms ease;
+}
+
+.letsGoButton:hover {
+  transform: scale(1.25);
+  transition: 200ms ease;
+}
