@@ -30,9 +30,8 @@
   color: var(--bg);
   border: solid 3px var(--bg);
   font-family: 'Lobster', sans-serif;
-  font-weight: bold;
-  font-size: 1.2rem;
-  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 1.3rem;
   border-radius: 100px;
   transition: 300ms ease;
 }

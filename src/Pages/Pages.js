@@ -26,7 +26,7 @@ const Pages = (props) => {
             let's you restructure songs and experiment with sound. <br></br>
           </p>
           <Link to='/songs/genre1'>
-            <button className='letsGoButton'>Begin</button>
+            <button className='letsGoButton'>GO</button>
           </Link>
         </div>
       </div>
