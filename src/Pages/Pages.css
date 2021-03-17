@@ -28,10 +28,10 @@
   background-color: white;
   padding: 15px;
   color: var(--bg);
-  border: solid 5px var(--bg);
+  border: solid 3px var(--bg);
   font-family: 'Lobster', sans-serif;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   letter-spacing: 3px;
   border-radius: 100px;
   transition: 300ms ease;

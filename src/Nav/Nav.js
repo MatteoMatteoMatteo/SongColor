@@ -3,7 +3,6 @@ import './Nav.scss';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import polar from './../Assets/polar.png';
 import { logout } from '../Redux/Actions/auth';
 
 const Nav = ({ auth: { isAuthenticated, loading }, logout }) => {
