@@ -57,7 +57,7 @@ class StudioControl extends Component {
     sectionArrayFromChild: this.props.sectionStatus,
     nextSectionAlreadySet: false,
 
-    isItLocked: true,
+    isItLocked: false,
     isItLockedStyle: false,
 
     audioLoaded: false,
@@ -310,7 +310,7 @@ class StudioControl extends Component {
             onClick={() => {
               this.setState({ isItLocked: !this.state.isItLocked });
             }}>
-            Full Song
+            Loop
           </div>
           <div className={'tempoHolder'}>
             <div>Tempo</div>
