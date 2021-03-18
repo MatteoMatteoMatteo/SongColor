@@ -306,7 +306,7 @@ class StudioControl extends Component {
             </div>
           </div>
           <div
-            className={this.state.isItLocked ? 'lockHolder ' : 'lockHolder lockActive'}
+            className={!this.state.isItLocked ? 'lockHolder ' : 'lockHolder lockActive'}
             onClick={() => {
               this.setState({ isItLocked: !this.state.isItLocked });
             }}>
