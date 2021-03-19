@@ -4,6 +4,7 @@ import StudioControl from '../StudioControl/StudioControl';
 import SongInfo from '../../Main/SongInfo/SongInfo';
 import LoadingSpinner from '../../UseComponents/LoadingSpinner/LoadingSpinner';
 import { Transport } from 'tone';
+import Footer from '../../Footer/Footer';
 
 class AudioFilesHandler extends Component {
   constructor(props) {
@@ -449,7 +450,7 @@ class AudioFilesHandler extends Component {
 
   render() {
     return this.state.audioLoaded ? (
-      <div className={'studioWrapper'} initial='initial' animate='animate' exit={{ opacity: 0 }}>
+      <div className={'studioWrapper'}>
         <SongInfo
           metronomeHandle={this.handleMetronome}
           metronomeOnOff={this.state.metronome}

@@ -1,10 +1,17 @@
-import React from "react";
-import "./Footer.scss";
+import React from 'react';
+import './Footer.scss';
+import { Link } from 'react-router-dom';
 
-const nav = () => (
-  <div className={"footer"}>
-    <div className={"footerElement"}>Music by Canvai</div>
-  </div>
-);
+const nav = () => {
+  const year = new Date().getFullYear();
+
+  return (
+    <div className={'footerContainer'}>
+      <a href='https://www.matteoprock.com/' target='_blank'>
+        <div className='contactLink'>© {year}</div>
+      </a>
+    </div>
+  );
+};
 
 export default nav;

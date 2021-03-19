@@ -23,9 +23,12 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Wrapper>
-          {/* <VideoBG/> */}
-          <Nav />
-          <Pages />
+          <div style={{ paddingBottom: '5rem' }}>
+            <Nav />
+            <Pages />
+            <div style={{ marginBottom: '100px' }}></div>
+          </div>
+          <Footer></Footer>
         </Wrapper>
       </Router>
     </Provider>
