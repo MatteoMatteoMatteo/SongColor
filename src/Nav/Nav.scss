@@ -1,14 +1,19 @@
 .nav {
   background-color: var(--lightBlack);
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 30px;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
-  align-items: center;
-  font-size: 1.1rem;
   position: sticky;
   z-index: 999;
+}
+
+.navHolder {
+  margin: auto;
+  max-width: 1920px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
 }
 
 .front {

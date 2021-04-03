@@ -24,96 +24,98 @@ const Nav = ({ auth: { isAuthenticated, loading }, logout }) => {
 
   return (
     <div className={'nav'}>
-      <div className={'front'}>
-        <Link
-          style={{
-            border: 'none',
-            margin: '0px',
-            padding: '0px',
-            textDecoration: 'none',
-          }}
-          to='/'>
-          <div className={'polarJam'}>SongColor</div>
-        </Link>
-      </div>
-      <div className={'back'}>
-        <div className='menu' onClick={handleClick}>
-          menu
+      <div className={'navHolder'}>
+        <div className={'front'}>
+          <Link
+            style={{
+              border: 'none',
+              margin: '0px',
+              padding: '0px',
+              textDecoration: 'none',
+            }}
+            to='/'>
+            <div className={'polarJam'}>SongColor</div>
+          </Link>
         </div>
-        <ul className={'dropdown'}>
-          <li>
-            <Link
-              style={{ margin: '0px', padding: '0px', textDecoration: 'none' }}
-              to='/songs/genre1'>
-              <span className={'name'}>Studio</span>
-            </Link>
-            <ul>
-              <li>
-                <Link
-                  style={{
-                    margin: '0px',
-                    border: 'none',
-                    padding: '0px',
-                    textDecoration: 'none',
-                  }}
-                  to='/songs/genre1'>
-                  <span className={'name'}>Full Songs</span>
-                </Link>
-                <ul>
-                  <li>
-                    <Link
-                      style={{
-                        margin: '0px',
-                        border: 'none',
-                        padding: '0px',
-                        textDecoration: 'none',
-                      }}
-                      to='/songs/genre1'>
-                      <span className={'name'}>Pop</span>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      style={{
-                        border: 'none',
-                        margin: '0px',
-                        padding: '0px',
-                        textDecoration: 'none',
-                      }}
-                      to='/songs/genre2'>
-                      <span className={'name'}>Tropical</span>
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        {/* <ul className='dropdown' style={{ marginLeft: '0px' }}>
+        <div className={'back'}>
+          <div className='menu' onClick={handleClick}>
+            menu
+          </div>
+          <ul className={'dropdown'}>
+            <li>
+              <Link
+                style={{ margin: '0px', padding: '0px', textDecoration: 'none' }}
+                to='/songs/genre1'>
+                <span className={'name'}>Studio</span>
+              </Link>
+              <ul>
+                <li>
+                  <Link
+                    style={{
+                      margin: '0px',
+                      border: 'none',
+                      padding: '0px',
+                      textDecoration: 'none',
+                    }}
+                    to='/songs/genre1'>
+                    <span className={'name'}>Full Songs</span>
+                  </Link>
+                  <ul>
+                    <li>
+                      <Link
+                        style={{
+                          margin: '0px',
+                          border: 'none',
+                          padding: '0px',
+                          textDecoration: 'none',
+                        }}
+                        to='/songs/genre1'>
+                        <span className={'name'}>Pop</span>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        style={{
+                          border: 'none',
+                          margin: '0px',
+                          padding: '0px',
+                          textDecoration: 'none',
+                        }}
+                        to='/songs/genre2'>
+                        <span className={'name'}>Tropical</span>
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          {/* <ul className='dropdown' style={{ marginLeft: '0px' }}>
           <li>
             <Link style={{ margin: '0px', padding: '0px', textDecoration: 'none' }} to='/'>
               <span className={'name'}>Jam</span>
             </Link>
           </li>
         </ul> */}
-      </div>
-      <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-        {/* <li className='nav-item' onClick={handleClick}>
+        </div>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          {/* <li className='nav-item' onClick={handleClick}>
           <Link to='/' className='nav-links'>
             Jam
           </Link>
         </li> */}
-        <li className='nav-item' onClick={handleClick}>
-          <Link to='/songs/genre1' className='nav-links'>
-            Pop
-          </Link>
-        </li>
-        <li className='nav-item' onClick={handleClick}>
-          <Link to='/songs/genre2' className='nav-links'>
-            Tropical
-          </Link>
-        </li>
-      </ul>
+          <li className='nav-item' onClick={handleClick}>
+            <Link to='/songs/genre1' className='nav-links'>
+              Pop
+            </Link>
+          </li>
+          <li className='nav-item' onClick={handleClick}>
+            <Link to='/songs/genre2' className='nav-links'>
+              Tropical
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
