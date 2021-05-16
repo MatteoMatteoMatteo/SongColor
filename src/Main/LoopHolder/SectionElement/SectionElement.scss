@@ -12,6 +12,7 @@ $color4: #222433;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   opacity: 1;
   background-color: var(--sectionBody);
+  margin-right: 20px;
 
   &.shaking {
     animation-duration: 450ms;
@@ -29,7 +30,7 @@ $color4: #222433;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   opacity: 0.2;
-
+  margin-right: 20px;
   background-color: var(--sectionBody);
 }
 
